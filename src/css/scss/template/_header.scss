@@ -1,0 +1,40 @@
+.header {
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 1px solid #f7f7f750;
+    .container {
+        .navBar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 5px;
+            align-items: center;
+            justify-content: space-between;
+
+            .profile-btn {
+                background-color: transparent;
+
+                button {
+                    background-color: transparent !important;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    padding: 0;
+                    border: 0;
+                    img {
+                        border-radius: 20px;
+                        width: 50px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        -o-border-radius: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+}

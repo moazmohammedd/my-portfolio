@@ -1,0 +1,107 @@
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+100%{
+        opacity: 100;
+    }
+}
+@keyframes toBottom {
+    0% {
+        top: 0;
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+
+}
+
+@keyframes landing {
+0%{
+    opacity: 0;
+    transform: translateY(200%);
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
+}
+50%{
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    opacity: 1;
+}
+100%{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+}
+@keyframes play {
+    0%{
+        
+    box-shadow: 0 0 0px 0px #fb6d1ac1;
+}
+50%{
+        box-shadow: 0 0 0px 20px #fb6d1a;
+
+    }
+    
+80%{
+        box-shadow: 0 0 0px 30px #fb6d1a71;
+
+    }
+80%{
+        box-shadow: 0 0 0px 30px #fb6d1a00;
+
+    }
+
+}
+
+@keyframes loadAn{
+    0%{
+        border-radius: 50%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        box-shadow: 0 0 8px 0 var(--blue-w);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+50%{
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+100%{
+        border-radius: 50%;
+        box-shadow: 0 0 8px 0 var(--blue-w);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}

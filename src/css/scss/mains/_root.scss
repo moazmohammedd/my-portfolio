@@ -1,0 +1,50 @@
+:root {
+    --main-color: #25bcca;
+    --main-color2: #2acf6e;
+    --main-font: #303137;
+    --bg-transpernt:#f7f7f750;
+    --dark: #121b21;
+    --black: #212c33;
+    --white: #fff;
+    --red:#ef3c3d;
+    --mian-bx-shadow:0 0 3px 0 #00000020;
+}
+
+* {
+    box-sizing: border-box;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+$mains_class_color : "c-black" --black,
+"c-dark" --dark,
+"c-white" --white,
+"c-main" --main-color,
+"c-red" --red,
+"c-font" --main-font,
+;
+
+
+$mains_class_bg : "b-dark" --dark,
+"b-main" --main-color,
+"b-black" --black,
+"b-white" --white,
+"b-red" --red,
+;
+
+@each $name ,
+$color in $mains_class_bg {
+    .#{$name} {
+        background-color: var($color);
+    }
+}
+
+@each $name ,
+$color in $mains_class_color {
+    .#{$name} {
+        color: var($color);
+    }
+}
