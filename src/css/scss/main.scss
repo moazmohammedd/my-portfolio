@@ -27,11 +27,16 @@ body {
     }
 
     .content-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 50%50%;
         height: 100%;
-        justify-content: space-between;
+        align-items: center;
+        @media (max-width:991px) {
+            &{
+                text-align: center;
+                grid-template-columns: 100%;
+            }
+        }
     }
 
     .info-box {
@@ -44,18 +49,32 @@ body {
             svg {
                 stroke: #ffeb3b;
             }
+            @media (max-width:991px) {
+                &{
+                    justify-content: center;
+                }
+            }
         }
 
         h2 {
+            font-size:2rem;
             q{
                 &::after , &::before{
                     color: #98fffa;
                 }
             }
             span {
-                font-size: 28px;
+                font-size:2.2rem;
                 padding-inline: 5px;
 
+            }
+            @media (max-width:661px) {
+                &{
+                    font-size: 1.2rem;
+                    span{
+                        font-size: 1.5rem;
+                    }
+                }
             }
         }
 
